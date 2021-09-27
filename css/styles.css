@@ -81,6 +81,10 @@ header .logo {
   font-size: 2.5rem;
 }
 
+header .logo i {
+  color: var(--red);
+}
+
 header .navbar a {
   font-size: 2rem;
   margin-left: 2.5rem;
@@ -351,6 +355,88 @@ header .navbar a:hover {
 
 .pricing .box-container .box .btn {
   margin-top: 2rem;
+}
+
+.contact {
+  background: linear-gradient(#fff 50%, var(--black) 50.1%);
+}
+
+.contact form {
+  padding: 2rem;
+  background: #fff;
+  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.1);
+}
+
+.contact form .inputBox {
+  position: relative;
+}
+
+.contact form .inputBox input,
+.contact form .inputBox textarea {
+  width: 100%;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border-bottom: 0.2rem solid rgba(0, 0, 0, 0.3);
+  font-size: 1.7rem;
+  text-transform: none;
+}
+
+.contact form .inputBox textarea {
+  resize: none;
+  height: 15rem;
+}
+
+.contact form .inputBox input:focus,
+.contact form .inputBox textarea:focus {
+  border-color: var(--red);
+}
+
+.contact form .inputBox label {
+  font-size: 1.7rem;
+  position: absolute;
+  top: 2.3rem;
+  left: 0;
+}
+
+.contact form .inputBox input:focus ~ label,
+.contact form .inputBox textarea:focus ~ label,
+.contact form .inputBox input:valid ~ label,
+.contact form .inputBox textarea:valid ~ label {
+  top: -0.4rem;
+  font-size: 1.5rem;
+  color: var(--red);
+}
+
+.footer {
+  text-align: center;
+  background: var(--black);
+}
+
+.footer .share a {
+  width: 4.5rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  background: #eee;
+  color: var(--black);
+  border-radius: 50%;
+  font-size: 2rem;
+  margin: 0.3rem;
+}
+
+.footer .share a:hover {
+  color: #fff;
+  background: var(--gradient);
+}
+
+.footer .credit {
+  color: #eee;
+  padding: 2.5rem 1rem;
+  font-weight: normal;
+  font-size: 2rem;
+}
+
+.footer .credit span {
+  color: var(--red);
 }
 
 /* media queries */
